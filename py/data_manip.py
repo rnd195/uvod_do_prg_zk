@@ -1,9 +1,13 @@
 from sys import exit
+import os
 
 
 def load_sequence(filename):
     """Loads a sequence of numbers from a text file, where each number is
     separated by a line break."""
+
+    # Change working directory to filepath
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
     try:
         with open(filename, "r", encoding="UTF-8") as f:
