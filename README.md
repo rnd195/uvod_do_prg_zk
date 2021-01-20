@@ -1,7 +1,7 @@
 # Úvod
 Tento repozitář obsahuje řešení příkladů ke zkoušce z předmětu Úvod do programování.
 
-V kořenovém adresáři lze naleznout soubory `docs_insert.pdf` a `docs_median.pdf`, které slouží jako dokumentace či technická zpráva ke zpracovaným programům.
+V kořenovém adresáři lze naleznout soubory `doc_insert.pdf` a `doc_median.pdf`, které slouží jako dokumentace či technická zpráva ke zpracovaným programům.
 
 Programy lze naleznout ve složce [`py`](https://github.com/rnd195/uvod_do_prg_zk/tree/main/py). Obsah složky:
 
