@@ -2,19 +2,21 @@ import data_manip as dm
 
 
 def insertion_sort(sequence, order="A"):
-    """Sorts a sequence using the iterative insertion sort algorithm."""
+    """Sorts a sequence using the iterative insertion sort algorithm in
+    ascending or descending order."""
+
+    order_dict = {"A": 1, "D": -1}
+    sign = order_dict[order]
 
     for index in range(1, len(sequence)):
         # Use different indices in each loop for clarity
         pos = index
 
-        while sequence[pos - 1] > sequence[pos] and pos > 0:
+        # Order specified as "D" => opposite sign => opposite order
+        while sign * sequence[pos - 1] > sign * sequence[pos] and pos > 0:
             sequence[pos - 1], sequence[pos] = sequence[pos], sequence[pos - 1]
             pos -= 1
 
-    # User selects ascending / descending order
-    if order != "A":
-        sequence.reverse()
     return sequence
 
 
